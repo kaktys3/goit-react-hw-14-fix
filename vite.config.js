@@ -10,4 +10,8 @@ export default defineConfig({
       },
     }),
   ],
+  build: {
+    outDir: 'docs', // білд буде створюватися в папці docs
+    emptyOutDir: true // очищає docs перед новим білдом
+  }
 })
