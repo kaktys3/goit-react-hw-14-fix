@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
+  base: '/goit-react-hw-14-fix/', // 👈 ОБОВʼЯЗКОВО
   plugins: [
     react({
       babel: {
@@ -11,7 +11,7 @@ export default defineConfig({
     }),
   ],
   build: {
-    outDir: 'docs', // білд буде створюватися в папці docs
-    emptyOutDir: true // очищає docs перед новим білдом
-  }
+    outDir: 'docs',
+    emptyOutDir: true,
+  },
 })
